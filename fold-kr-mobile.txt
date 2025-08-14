@@ -1,0 +1,7 @@
+/^https?:\/\/gall\.dcinside\.com\/m?gallery\/board\/lists\/\?id=([^&\?#]+).*$/, "https://m.dcinside.com/board/$1"
+/^https?:\/\/www\.dcinside\.com\/?$/, "https://m.dcinside.com/"
+/^https?:\/\/www\.naver\.com\/?$/, "https://m.naver.com/"
+/^https?:\/\/cafe\.naver\.com\/[^\/?#]+\/?\?[^#]*iframe_url_utf8=[^#]*clubid%3D([0-9]+)[^#]*%2526articleid%3D([0-9]+)[^#]*.*$/, "https://m.cafe.naver.com/ca-fe/web/cafes/$1/articles/$2"
+/^https?:\/\/cafe\.naver\.com\/[^\/?#]+\/?\?[^#]*iframe_url_utf8=[^#]*articleid%3D([0-9]+)[^#]*%2526clubid%3D([0-9]+)[^#]*.*$/, "https://m.cafe.naver.com/ca-fe/web/cafes/$2/articles/$1"
+/^https?:\/\/cafe\.naver\.com\/([^\/?#]+)\/?$/, "https://m.cafe.naver.com/ca-fe/$1"
+/^https?:\/\/section\.cafe\.naver\.com\/.*$/, "https://m.cafe.naver.com/"

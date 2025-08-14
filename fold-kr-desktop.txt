@@ -1,0 +1,6 @@
+/^https?:\/\/m\.dcinside\.com\/?$/, "https://www.dcinside.com/"
+/^https?:\/\/m\.naver\.com\/?$/, "https://www.naver.com/"
+/^https?:\/\/m\.cafe\.naver\.com\/ca-fe\/web\/cafes\/([0-9]+)\/articles\/([0-9]+)(?:[\/?#].*)?$/, "https://cafe.naver.com/ArticleRead.nhn?clubid=$1&articleid=$2"
+/^https?:\/\/m\.cafe\.naver\.com\/ca-fe\/([^\/?#]+)(?:[\/?#].*)?$/, "https://cafe.naver.com/$1"
+/^https?:\/\/m\.cafe\.naver\.com\/?$/, "https://section.cafe.naver.com/"
+/^https?:\/\/m\.inven\.co\.kr(\/.*)?$/, "https://www.inven.co.kr$1"
