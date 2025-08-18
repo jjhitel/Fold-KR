@@ -1,5 +1,9 @@
-/^https?:\/\/cafe\.naver\.com\/([a-zA-Z0-9_-]+)\/(\d+).*/, "https://m.cafe.naver.com/$1/$2"
+# Naver Cafe
 /^https?:\/\/cafe\.naver\.com\/[^/]+\/cafes\/(\d+)\/articles\/(\d+).*/, "https://m.cafe.naver.com/ca-fe/web/cafes/$1/articles/$2"
+/^https?:\/\/cafe\.naver\.com\/([A-Za-z0-9_-]+)\?.*?articleid(?:=|%3D|%253D)(\d+).*/ -> https://m.cafe.naver.com/$1/$2
+cafe.naver.com/f-e/* -> m.cafe.naver.com/ca-fe/web/$1
+section.cafe.naver.com/* -> m.cafe.naver.com
+cafe.naver.com/* -> m.cafe.naver.com/$1
+
 /^https?:\/\/news\.naver\.com\/main\/list\.naver\?[^#]*sid1=(\d+)[^#]*/, "https://m.news.naver.com/officeMain?mode=LSD&sid1=$1"
-section.cafe.naver.com -> m.cafe.naver.com
 www.inven.co.kr/* -> m.inven.co.kr/$1

@@ -1,7 +1,13 @@
-/^https?:\/\/m\.cafe\.naver\.com\/([a-zA-Z0-9_-]+)\/(\d+).*/, "https://cafe.naver.com/$1/$2"
-/^https?:\/\/m\.cafe\.naver\.com\/ca-fe\/web\/cafes\/([a-zA-Z0-9_-]+)\/articles\/(\d+).*/, "https://cafe.naver.com/ArticleRead.nhn?clubid=$1&articleid=$2"
+# Naver Cafe
 /^https?:\/\/m\.news\.naver\.com\/officeMain\?[^#]*sid1=(\d+)[^#]*/, "https://news.naver.com/main/list.naver?mode=LSD&mid=sec&sid1=$1"
+/^https?:\/\/m\.cafe\.naver\.com\/ca-fe\/web\/cafes\/([0-9_-]+)\/articles\/(\d+).*$/i, "https://cafe.naver.com/f-e/cafes/$1/articles/$2"
+/^https?:\/\/m\.cafe\.naver\.com\/ca-fe\/web\/cafes\/([a-zA-Z0-9_-]+)\/articles\/(\d+).*$/i, "https://cafe.naver.com/$1/$2"
+/^https?:\/\/m\.cafe\.naver\.com\/([a-zA-Z0-9_-]+)\/(\d+).*$/i, "https://cafe.naver.com/$1/$2"
+m.cafe.naver.com/ca-fe/web/* -> cafe.naver.com/f-e/$1
+m.cafe.naver.com/ca-fe/* -> cafe.naver.com/$1
+m.cafe.naver.com/* -> cafe.naver.com/$1
 m.cafe.naver.com -> section.cafe.naver.com
+
 m.dcinside.com -> www.dcinside.com
 m.inven.co.kr/* -> www.inven.co.kr/$1
 m.naver.com -> www.naver.com
